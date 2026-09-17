@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f5f5f5;
+}
+
+header {
+    background: #17202a;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+}
+
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+    background: #c9a66b;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 50px;
+}
+
+button {
+    padding: 12px 25px;
+    border: 0;
+    background: #17202a;
+    color: white;
+    cursor: pointer;
+}
+
+.rooms {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    width: 30%;
+    box-shadow: 0 3px 10px #ccc;
+}
+
+footer {
+    background: #17202a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media(max-width:700px) {
+    header, .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
